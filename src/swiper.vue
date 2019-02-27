@@ -152,7 +152,7 @@
         this.emittedEvents.forEach(eventName => {
           this.swiper.on(eventName, function() {
             vm.$emit(eventName, ...arguments)
-            vm.$emit(eventName.replace(/([A-Z])/g, '-$1').toLowerCase(), ...arguments)
+            // vm.$emit(eventName.replace(/([A-Z])/g, '-$1').toLowerCase(), ...arguments)
           })
         })
       }
